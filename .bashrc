@@ -8,7 +8,7 @@ alias sudo='sudo '
 alias woodo='sh ~/.woodo.sh'
 
 #REDO
-alias please='sudo \!-1'
+alias please='sudo $(history -p \!\!)'
 
 #Simplified Navigation
 alias ..='cd ..'
