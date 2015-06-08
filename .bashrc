@@ -20,14 +20,6 @@ alias ......='cd ../../../../../'
 #TMUX FIX?
 alias tmux="TERM=screen-256color-bce tmux -2"
 
-#SOCCHECK
-alias soccheck='python /Users/JonathanWest/python/soccheck.py'
-
-#OPEN FACEBOOK/GMAIL/REDDIT
-alias facebook='open http://www.facebook.com'
-alias gmail='open http://www.gmail.com'
-alias reddit='open http://www.reddit.com'
-
 #CLOCK
 alias clock='while sleep 1;do tput sc;tput cup 0 $(($(tput cols)-29));date;tput rc;done &'
 
