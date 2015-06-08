@@ -1,0 +1,5 @@
+new -n workspace
+splitw -h
+splitw -v wego
+splitw -v "tty-clock -c"
+ 
