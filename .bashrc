@@ -41,14 +41,7 @@ alias farore='if [[ "$f" == "" ]]; then f=$(pwd); else cd $f; unset f; fi'
 # Figlet Clock
 alias clock = 'while true; do tput clear; date + "%H : %M : %S" | figlet ; sleep 1; done'
 
-#VSCode Launcher
-
-code () {
-    if [[ $# = 0 ]]
-    then
-        open -a "Visual Studio Code"
-    else
-        [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
-        open -a "Visual Studio Code" --args "$F"
-    fi
-}
+#TMUX Colours
+for i in {0..255} ; do
+    printf "\x1b[38;5;${i}mcolour${i}\n"
+done
